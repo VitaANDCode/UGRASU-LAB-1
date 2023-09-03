@@ -54,7 +54,7 @@ footer {
     padding-bottom: 50px;
 }
 
-.nav-link {
+.nav-link, .contact-link {
     margin-left: 30px;
 
     text-shadow: 2px 2px 2px black;
@@ -71,6 +71,10 @@ footer {
 .author-name {
     font-size: 64px;
     text-shadow: 5px 1px 1px red;
+}
+
+.author-number, .author-site {
+    display: inline;
 }
 
 .contact-header {
@@ -93,6 +97,7 @@ footer {
     box-sizing: border-box;
     border-radius: 10px;
     opacity: 0.4;
+    resize: none;
 }
 
 .send-message {
@@ -104,7 +109,13 @@ footer {
     line-height: 26px;
     text-align: center;
     color: #FFFFFF;
-    text-transform: uppercase;
+
+    -webkit-transition: all 1s ease;
+            transition: all 1s ease;
+}
+
+.send-message:hover {
+    color: darkred;
 }
 
 .gallery-header {
@@ -118,5 +129,10 @@ footer {
 }
 
 .map-block {
-    margin-left: 50vh;
+    display: flex;
+    justify-content: center;
+}
+
+.message-form {
+    margin-bottom: 15px;
 }
