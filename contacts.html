@@ -1,91 +1,128 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    
     <title>OXXXYFUN | CONTACTS</title>
 
+    <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
 </head>
+
 <body>
+
     <header>
+
         <p>OXXXYFUN</p>
+
         <nav>
             <a class="nav-link" href="index.html">Главная</a>
             <a class="nav-link" href="contacts.html">Контакты</a>
             <a class="nav-link" href="gallery.html">Галерея</a>
         </nav>
+
     </header>
+
     <main>
-        <section class="container">
+
+        <section class="main-wrap">
+
             <div class="info-block">
                 <h2 class="contact-header">Связаться с нами</h2>
                 <p class="author-contact">Контактная информация.</p>
                 <img src="media/oxxxymiron.jpg" alt="Фото Oxxxymiron'a" title="oxxxymiron" height="339px" width="341px">
             </div>
+
             <div class="info-block">
                 <h4 class="author-info">Адрес</h4>
                 <p class="author-city">Город проживания (Официальный) : <br>Санкт-Петербург</p>
             </div>
+
             <div class="info-block">
+
                 <h4 class="author-info">Телефон</h4>
-                <div>
+
+                <section>
                     <p class="author-number">Россия:</p>
                     <div><a class="contact-link" href="telto:+74951426010">+7(495)142-60-10</a></div>
-                </div>
-                <div>
+                </section>
+
+                <section>
                     <p class="author-number">Казахстан:</p>
                     <div><a class="contact-link" href="telto:+77172696162">+7(717)269-61-62</a></div>
-                </div>
+                </section>
+
             </div>
+
             <div class="info-block">
+
                 <h4 class="author-info">Мы Online!</h4>
+
                 <div>
                     <p class="author-site">Официальный мерч:</p>
                     <div><a class="contact-link" href="https://oxxxyshop.com" target="_blank">oxxxyshop.com</a></div>
                 </div>
+
                 <div>
                     <p class="author-site">Почта:</p>
                     <div><a class="contact-link" href="mailto:inbox@bigcitystar.ru">inbox@bigcitystar.ru</a></div>
                 </div>
+
             </div>
+
             <div class="info-block">
+
                 <h4 class="author-info"></h4>Отправить сообщение</h4>
+
                 <form action="#">
                     <div class="message-form">
                         <label for="user-name">Name</label>
                         <input class="contact-the-author" type="text" id="user-name" placeholder="Введите имя сюда"/>
                     </div>
+
                     <div class="message-form">
                         <label for="user-email">Email</label>
                         <input class="contact-the-author" type="text" id="user-email" placeholder="Введите свою почту сюда"/>
                     </div>
+
                     <div class="message-form">
                         <label for="user-message">Message</label>
                         <textarea class="contact-the-author" id="user-message" cols="30" rows="10" placeholder="Введите своё сообщение сюда"></textarea>
                     </div>
+
                     <div class="message-form"><input class="send-message" type="submit" value="Отправить"></div>
                 </form>
+
             </div>
+
             <div class="map-block">
                 <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Aa2e3152bd474b9fed7e455735cb3c807ea014865a134985d22e3b765b49a041b&amp;width=250&amp;height=250&amp;lang=ru_RU&amp;scroll=true"></script>
             </div>
+
         </section>
+
     </main>
+
     <footer>
+
         <section>
             <h3 class="angle-oxxxy">"Оксиуголок"</h3>
             <p class="text-contacts">Обратная связь и контактные данные.</p>
         </section>
+
         <hr>
+
         <section>
             <p class="author-number"><a class="contact-link" href="tel:+74951426010">+7(495)142-60-10</a></p>
             <p class="author-mail"><a class="contact-link" href="mailto:inbox@bigcitystar.ru">inbox@bigcitystar.ru</a></p>
             <p class="site-name">OXXXYFUN | Белозёров Вячеслав</p>
         </section>
+
     </footer>
+    
 </body>
 </html>
