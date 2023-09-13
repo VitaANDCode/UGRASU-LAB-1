@@ -4,14 +4,12 @@
 
 body {
     font-family: 'Russo One', sans-serif;
-
     background-image: url(media/background-header.png);
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 p {
-    font-size: 32px;
     line-height: 48px;
     color: black;
 }
@@ -23,26 +21,39 @@ a {
 header {
     text-align: center;
     box-shadow: 2px 2px 2px 2px #000000;
-
     background-image: url(media/background-header.png);
     background-repeat: no-repeat;
     background-size: cover;
-
     padding-bottom: 15px;
 }
 
 main {
     text-align: center;
-
     background-image: url(media/background.png);
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 footer {
+
     text-align: center;
     box-shadow: 0px 0px 0px 0.8px #000000;
     text-shadow: 1px 2px 1px red;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+}
+
+
+
+.site-name {
+    font-size: 48px;
+}
+
+.text-author, .text-contacts, .author-city, .author-number-country, .author-shop, .author-mail, .author-contact {
+    font-size: 32px;
 }
 
 .info-block {
@@ -55,8 +66,6 @@ footer {
 }
 
 .nav-link, .contact-link {
-    margin-left: 30px;
-
     text-shadow: 2px 2px 2px black;
     font-size: 24px;
     color: red;
@@ -109,7 +118,6 @@ footer {
     line-height: 26px;
     text-align: center;
     color: #FFFFFF;
-
     -webkit-transition: all 1s ease;
             transition: all 1s ease;
 }
@@ -135,4 +143,67 @@ footer {
 
 .message-form {
     margin-bottom: 15px;
+}
+
+/*  Media requests */
+@media (min-width: 320px) and (max-width: 768px) {
+
+    .author-name { font-size: 32px; }
+
+    .text-author { font-size: 16px;}
+
+    .nav-link { font-size: 18px;}
+
+    .site-name { font-size: 24px;}
+
+    .angle-oxxxy, .author-character { font-size: 21px; }
+
+    .author-info { font-size: 19px;}
+
+    .main-wrap { padding-top: 25px; padding-bottom: 25px; }
+
+    .info-block {margin-bottom: 25px;}
+
+    .text-author, .text-contacts, .author-city, .author-number-country, .author-shop, .author-mail, .author-contact { font-size: 16px; }
+
+    .site-name {font-size: 20px;}
+
+    .contact-header { font-size:  24px;}
+
+    .oxxxy-photo { height: 160px; width: 170px; }
+
+    .gallery-photo { height: 100px; width: 100px; }
+
+    p { line-height: 32px; }
+}
+
+@media (min-width: 768px) and (max-width: 1000px) {
+
+    .author-name { font-size: 48px; }
+
+    .text-author { font-size: 20px;}
+
+    .nav-link { font-size: 22px;}
+
+    .site-name { font-size: 28px;}
+
+    .angle-oxxxy, .author-character { font-size: 28px; }
+
+    .author-info { font-size: 25px;}
+
+    .main-wrap { padding-top: 35px; padding-bottom: 35px; }
+
+    .info-block {margin-bottom: 35px;}
+
+    .text-author, .text-contacts, .author-city, .author-number-country, .author-shop, .author-mail, .author-contact { font-size: 20px; }
+
+    .site-name {font-size: 28px;}
+
+    .contact-header { font-size:  30px;}
+
+    .oxxxy-photo { height: 180px; width: 190px; }
+
+    .gallery-photo { height: 135px; width: 135px; }
+
+    p { line-height: 38px; }
 }
